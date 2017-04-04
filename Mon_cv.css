@@ -1,0 +1,68 @@
+html {
+  height: 100%;
+}
+#ma_photo
+{
+	float: right;
+	border: 2px solid teal;
+	box-shadow: 2px 2px 5px teal;
+	
+}
+@font-face {
+    font-family: '2-Questa_Sans_Regular';
+    src: url('Fonts/2-Questa_Sans_Regular-webfont.woff2') format('woff2'),
+		 url('Fonts/2-Questa_Sans_Regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+	height:100%;
+	background-image: url("images/paper.jpg");
+	background-repeat: no-repeat;
+}
+
+h1, h5
+{
+	font-family: '2-Questa_Sans_Regular';
+	text-align: center;
+}
+
+h2
+{
+  color: teal;
+}
+.Liseret{
+	visibility: visible;
+	float: Left;
+	width:100px;
+	height: 100%;
+	border: 1px solid black;
+	border-radius: 10px 10px 10px 10px;
+	background-color: teal;
+}
+.container
+{
+    display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+@media screen and (max-width: 1024px)
+{
+	.Liseret
+	{
+		visibility: hidden;
+		width:0px;
+
+	}
+	.container
+	{
+		display:flex;
+		flex-direction:column;
+
+	}
+}
+
+
+
+
+
